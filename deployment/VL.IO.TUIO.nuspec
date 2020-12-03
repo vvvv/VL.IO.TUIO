@@ -13,12 +13,13 @@
     <tags>VL</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<dependencies>
-		<dependency id="VL.IO.OSC" version="0.2.1-alpha" />
+		<dependency id="VL.IO.OSC" version="1.0.0" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
 	<file src="..\vvvv\**" target="vvvv\" exclude="" />
 	<file src="nugeticon.png" target="icon\" />
   </files>
