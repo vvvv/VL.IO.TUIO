@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.TUIO</id>
-    <version>0.0.1-alpha</version>
+    <version>0.0.2-alpha</version>
     <title>VL.IO.Firmata</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -12,6 +12,9 @@
     <description>Provides support for the TUIO protocol in VL. Try it with vvvv: http://visualprogramming.net</description>
     <tags>VL</tags>
 	<license type="expression">LGPL-3.0-only</license>
+	<dependencies>
+		<dependency id="VL.IO.OSC" version="0.2.1-alpha" />
+    </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
   <files>
