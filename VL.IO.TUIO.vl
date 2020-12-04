@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AZ908mWZ2z6L9D48TsQ9JW" Summary="Nodes for the TUIO protocol: http://tuio.org" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2020.3.0.71" Version="0.128">
-  <NugetDependency Id="Se1aLRuKDlcMEPXBHIRYBZ" Location="VL.CoreLib" Version="2020.3.0-0071-ga1d0c69498" />
+<Document xmlns:p="property" Id="AZ908mWZ2z6L9D48TsQ9JW" Summary="Nodes for the TUIO protocol: http://tuio.org" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2020.2.4.333" Version="0.128">
+  <NugetDependency Id="Se1aLRuKDlcMEPXBHIRYBZ" Location="VL.CoreLib" Version="2020.2.4" />
   <Patch Id="IaechGOEl3dNhj0Bh8NRgp">
     <Canvas Id="Lr3V3AjJ4JQQdp6VsOu4pm" DefaultCategory="IO.TUIO" CanvasType="FullCategory">
       <!--
@@ -2052,7 +2052,6 @@
             </Pin>
             <Pin Id="MeYsbNt8FAePYHLDIYdqu9" Name="Send Source Message" Kind="InputPin" />
             <Pin Id="JfQawPUlkfEOFezJHLJxSJ" Name="Maximum Bundle Size" Kind="InputPin" Bounds="396,921" />
-            <Pin Id="SrajBuqiCXdP0Mrcj0TTeT" Name="Cap at Max Bundle Size" Kind="InputPin" Bounds="857,359" />
             <Pin Id="FQn8RRFQJRSLIrdXLlEFrl" Name="Enabled" Kind="InputPin" Bounds="425,940" />
             <Pin Id="BaHP3pH6yf4Lm4RkiGZo2q" Name="Is Open" Kind="OutputPin" Bounds="425,280" />
             <Pin Id="RIamOU1s5GGMDwctzIkt1p" Name="Bundle Size Exceeded" Kind="OutputPin" Bounds="626,992" />
@@ -2080,8 +2079,8 @@
               <Pin Id="Nh2MA7frTXyLzpaevnJb9d" Name="Value" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="PX3yM0Xwb3gO2UEMUFF3Zu" Bounds="94,183" />
-            <ControlPoint Id="J1Zge9MX2zyM3h93DNpeWm" Bounds="1013,371" />
-            <ControlPoint Id="ELKjTBskJBnO6ivRJAtfBZ" Bounds="1134,371" />
+            <ControlPoint Id="J1Zge9MX2zyM3h93DNpeWm" Bounds="878,371" />
+            <ControlPoint Id="ELKjTBskJBnO6ivRJAtfBZ" Bounds="999,371" />
             <Pad Id="Q0Z6PrLLoguQaNX5Klk5MY" Comment="Profile" Bounds="530,443,73,15" ShowValueBox="true" isIOBox="true" Value="/tuio/2Dcur">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
@@ -2100,7 +2099,6 @@
               <Pin Id="B8lb9lpM8xwN5Hx0l22LUx" Name="Server" Kind="InputPin" />
               <Pin Id="L8miJ9ltUiyLeng5qTBY3j" Name="Port" Kind="InputPin" />
               <Pin Id="CkV1pEkRSpXNNs91sNxnUC" Name="Maximum Bundle Size" Kind="InputPin" />
-              <Pin Id="FlPEdafteV4Ndw0ExLsDZa" Name="Cap at Max Bundle Size" Kind="InputPin" />
               <Pin Id="MIaW47TOZGNLmANpxUIVxV" Name="Enabled" Kind="InputPin" />
               <Pin Id="RwBbwgyqBUVLztXNgmZurv" Name="Output" Kind="StateOutputPin" />
               <Pin Id="JGi2koHZiIuM0DDaKJzL8x" Name="Is Open" Kind="OutputPin" />
@@ -2459,7 +2457,6 @@
                         <Pin Id="Pcq3jc4EWsjMKsLKURYbW2" Name="State Input" Kind="StateInputPin" />
                         <Pin Id="UESJYY5auFcMPnCS44xgFg" Name="Input" Kind="InputPin" />
                         <Pin Id="OCZpCQcNfvPMP9ssfHhw9m" Name="Maximum Bundle Size" Kind="InputPin" />
-                        <Pin Id="SM6gsOKJ1cUOkXg6AwWgk0" Name="Cap at Max Bundle Size" Kind="InputPin" />
                         <Pin Id="P37g5H4GHKWN90Wr4rpBQB" Name="Apply" Kind="InputPin" />
                         <Pin Id="DTLiNLypddbPtSZ0Ym3S48" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="HcOArGiYci4LDhz0lKfsRY" Name="Bundle Size Exceeded" Kind="OutputPin" />
@@ -2488,7 +2485,6 @@
                   <ControlPoint Id="TJjcJzmDn8DLcRTt2oyPU4" Bounds="858,946" />
                   <ControlPoint Id="QW3Xbbxma6bQTyakIkngHr" Bounds="176,1008" />
                   <ControlPoint Id="DKycx1KPkQQO12X2IUPVt9" Bounds="438,1189" />
-                  <ControlPoint Id="TZjLsIx9vDxMkx1YZaSE6c" Bounds="880,975" />
                 </Canvas>
                 <ProcessDefinition Id="IJYM0AT9IcfOOke7hRr5jJ">
                   <Fragment Id="SWRtY9GNufvN5stjPz8uQy" Patch="DEUO9wimqBsPN3h6Lqoqht" Enabled="true" />
@@ -2512,7 +2508,6 @@
                   </Pin>
                   <Pin Id="V0QyIryATh7PyrNWVnt04X" Name="Address" Kind="InputPin" Bounds="1673,296" />
                   <Pin Id="Oljj8QtkuBaPNEWL6wcnyI" Name="Bundle Size Exceeded" Kind="OutputPin" Bounds="445,1099" />
-                  <Pin Id="USc6YqFTEsVO4CdVE4cffv" Name="Cap at Max Bundle Size" Kind="InputPin" Bounds="880,975" />
                 </Patch>
                 <Link Id="FZkpNFnjZB0QSLN3ZWtIIz" Ids="AiO3zb5Whc1OxjQHuZQxrR,Szg8Ll3sQYMO9bpMuaSCfD" IsHidden="true" />
                 <Link Id="AXJ9mH13PR7OFNaq8peU9R" Ids="Szg8Ll3sQYMO9bpMuaSCfD,FQRtHyHxrC3QAiLeNJ3bMn" />
@@ -2573,8 +2568,6 @@
                 <Link Id="NVemOsSwKnKO9jITmxy161" Ids="SPh0b3yJRBIOuxfexmAiKz,P37g5H4GHKWN90Wr4rpBQB" />
                 <Link Id="RaP3QCgqXlDNlcJPU1qq1t" Ids="TJjcJzmDn8DLcRTt2oyPU4,OCZpCQcNfvPMP9ssfHhw9m" />
                 <Link Id="NLEpbyonNHeLuCgVTLbUcu" Ids="QGIi9tVwxMuLq8Cx3J9pFO,JA00ACbBFcDO2rrGADie9C" />
-                <Link Id="NDsP00vTbztQTLqnlufi9N" Ids="TZjLsIx9vDxMkx1YZaSE6c,SM6gsOKJ1cUOkXg6AwWgk0" />
-                <Link Id="LGyiMELYhuvLrBOAInDmir" Ids="USc6YqFTEsVO4CdVE4cffv,TZjLsIx9vDxMkx1YZaSE6c" IsHidden="true" />
               </Patch>
             </Node>
             <Node Bounds="368,438,125,19" Id="RA7dAav73dSO3Fq5SlbUoD">
@@ -2589,7 +2582,6 @@
               <Pin Id="CHYdH78dDCFOoHBHOm4mCo" Name="Send Source Message" Kind="InputPin" />
               <Pin Id="IjrbRHqU0bKM55YB5BWL02" Name="Source Message" Kind="InputPin" />
               <Pin Id="LtfI726oZObOagvoMOlbKN" Name="Address" Kind="InputPin" />
-              <Pin Id="BRJ2ubYIrFLMjXbIfTfJxp" Name="Cap at Max Bundle Size" Kind="InputPin" />
               <Pin Id="HavQLJTsIC1OpjxKbqz2bO" Name="Bundle Size Exceeded" Kind="OutputPin" />
             </Node>
             <Node Bounds="407,590,125,19" Id="TvXCHMHjxQIPf0tdH1LWak">
@@ -2604,7 +2596,6 @@
               <Pin Id="AZ47JHAQVnoNCk5wE5SCjz" Name="Send Source Message" Kind="InputPin" />
               <Pin Id="U6sviZpxwCkL2JcgfArnlh" Name="Source Message" Kind="InputPin" />
               <Pin Id="LpZiGm3vkMUPQUZZYGMg1H" Name="Address" Kind="InputPin" />
-              <Pin Id="TlOiN8DLyH5LpP9fDJtldP" Name="Cap at Max Bundle Size" Kind="InputPin" />
               <Pin Id="HfUHlUZkqcvMBxcuGNYjUO" Name="Bundle Size Exceeded" Kind="OutputPin" />
             </Node>
             <Node Bounds="462,719,125,19" Id="FSMIyQmoi2GOjWg9tKbkgR">
@@ -2619,10 +2610,8 @@
               <Pin Id="AvVxaubfsXNPQYO7gBcSH8" Name="Send Source Message" Kind="InputPin" />
               <Pin Id="OWHJYGKG9t5LUNE6Zrz5Nb" Name="Source Message" Kind="InputPin" />
               <Pin Id="JdFaUOeYrRWNqSyAEFTidS" Name="Address" Kind="InputPin" />
-              <Pin Id="BJvVFTVn9kmPrFQ3bsvqex" Name="Cap at Max Bundle Size" Kind="InputPin" />
               <Pin Id="U5GIJeVkRV6NhSTuDenad0" Name="Bundle Size Exceeded" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="RCd9QhD3ubuLynAuOJFKir" Bounds="876,371" />
           </Canvas>
           <Link Id="EAp0nyIGec2MtOD4M3Aopf" Ids="IgY5ydq6Q1DMudN3yE21om,PX3yM0Xwb3gO2UEMUFF3Zu" IsHidden="true" />
           <Link Id="U4FJJrJbf8xN2zL0aEWHKM" Ids="MeYsbNt8FAePYHLDIYdqu9,J1Zge9MX2zyM3h93DNpeWm" IsHidden="true" />
@@ -2707,10 +2696,6 @@
           <Link Id="EAxFqz4ZCgpNA4Yw0pe1r8" Ids="Nh2MA7frTXyLzpaevnJb9d,SGZAbixJlvIOAaA22A8vKp" />
           <Link Id="FwNiNRNdA61NsrqjsFLPS8" Ids="MG5NDFRHeV6O7IrQEPOnK4,QbraaIoaYwRQY5rf4l8Tqm" />
           <Link Id="Ny66kfVfeFbPqTx3OLp6yn" Ids="MG5NDFRHeV6O7IrQEPOnK4,AQnt79FSxhhMEEQL7Dalky" />
-          <Link Id="JwKYjxxE741Mp33FZEkr1Q" Ids="RCd9QhD3ubuLynAuOJFKir,BRJ2ubYIrFLMjXbIfTfJxp" />
-          <Link Id="RTUEmGrkhOTPCx4v1ZBmNo" Ids="SrajBuqiCXdP0Mrcj0TTeT,RCd9QhD3ubuLynAuOJFKir" IsHidden="true" />
-          <Link Id="KW9CRW8PA3pNidGSi0UQxr" Ids="RCd9QhD3ubuLynAuOJFKir,TlOiN8DLyH5LpP9fDJtldP" />
-          <Link Id="C9QK7cJtL8kOfu265AYPVl" Ids="RCd9QhD3ubuLynAuOJFKir,BJvVFTVn9kmPrFQ3bsvqex" />
         </Patch>
       </Node>
       <Pad Id="DtMNUvvKLsuNd868Djx2r2" Bounds="270,137,182,19" ShowValueBox="true" isIOBox="true" Value="http://tuio.org/?specification">

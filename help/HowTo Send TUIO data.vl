@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="KfgtS2qmEKhPEw5X0H0zhu" LanguageVersion="2020.3.0.71" Version="0.128">
-  <NugetDependency Id="SmE5CrMa0DtNgDeaJ9GQir" Location="VL.CoreLib" Version="2020.3.0-0071-ga1d0c69498" />
+<Document xmlns:p="property" Id="KfgtS2qmEKhPEw5X0H0zhu" LanguageVersion="2020.2.4.333" Version="0.128">
+  <NugetDependency Id="SmE5CrMa0DtNgDeaJ9GQir" Location="VL.CoreLib" Version="2020.2.4" />
   <Patch Id="O5br29rp4GoOPV6ilvzPuE">
     <Canvas Id="HQnxbhB8rJbL6HhIIsOmlD" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -27,7 +27,6 @@
             <Pin Id="U6qQGNBHchoOlyjBGOTNlb" Name="Source Message" Kind="InputPin" />
             <Pin Id="VLyuJRItmF9LMz59oMO5dv" Name="Send Source Message" Kind="InputPin" />
             <Pin Id="VGD4PVz4A0aLqiOFyN8aYx" Name="Maximum Bundle Size" Kind="InputPin" />
-            <Pin Id="ECBn6NbqHi2LeCwV3ZN4kH" Name="Cap at Max Bundle Size" Kind="InputPin" />
             <Pin Id="FN7DT4dxeFPPfjDFCOwwUr" Name="Enabled" Kind="InputPin" DefaultValue="True">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -65,7 +64,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NLoubPmRq1PNvNelDbV2WM" Comment="Bundle Size Exceeded" Bounds="282,750,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NLoubPmRq1PNvNelDbV2WM" Comment="Bundle Size Exceeded" Bounds="279,750,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="GEFg7qkUf0bObOsFZwWSDG" Comment="Is Open" Bounds="139,750,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="96,284,269,134" Id="IWlYBelm2X9PFcUxo6KoAc">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
@@ -236,6 +235,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="CfItUWYd7thLqMqm9gEXbA" Location="VL.Skia" Version="2020.3.0-0071-ga1d0c69498" />
+  <NugetDependency Id="CfItUWYd7thLqMqm9gEXbA" Location="VL.Skia" Version="2020.2.4" />
   <NugetDependency Id="Or1WHbWdCWZPlmnUCs1G1R" Location="VL.IO.TUIO" Version="0.0.0.0" />
 </Document>

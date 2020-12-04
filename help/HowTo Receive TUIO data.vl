@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GDk1QsvhctLPOeo0PVj1oL" LanguageVersion="2020.3.0.71" Version="0.128">
-  <NugetDependency Id="SmE5CrMa0DtNgDeaJ9GQir" Location="VL.CoreLib" Version="2020.3.0-0071-ga1d0c69498" />
+<Document xmlns:p="property" Id="GDk1QsvhctLPOeo0PVj1oL" LanguageVersion="2020.2.4.333" Version="0.128">
+  <NugetDependency Id="SmE5CrMa0DtNgDeaJ9GQir" Location="VL.CoreLib" Version="2020.2.4" />
   <Patch Id="O5br29rp4GoOPV6ilvzPuE">
     <Canvas Id="HQnxbhB8rJbL6HhIIsOmlD" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -45,8 +45,8 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="B7CKhBHHUjsLSZbORgzG9U" Name="Bounds" Kind="InputPin" DefaultValue="1159, 74, 538, 502">
-              <p:TypeAnnotation LastCategoryFullName="System.Windows" LastSymbolSource="VL.CoreLib.Windows.vl">
+            <Pin Id="B7CKhBHHUjsLSZbORgzG9U" Name="Bounds" Kind="InputPin" DefaultValue="1180, 127, 600, 400">
+              <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
             </Pin>
@@ -669,6 +669,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="CfItUWYd7thLqMqm9gEXbA" Location="VL.Skia" Version="2020.3.0-0071-ga1d0c69498" />
+  <NugetDependency Id="CfItUWYd7thLqMqm9gEXbA" Location="VL.Skia" Version="2020.2.4" />
   <NugetDependency Id="Or1WHbWdCWZPlmnUCs1G1R" Location="VL.IO.TUIO" Version="0.0.0.0" />
 </Document>
