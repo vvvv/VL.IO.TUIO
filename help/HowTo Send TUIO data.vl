@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="KfgtS2qmEKhPEw5X0H0zhu" LanguageVersion="2020.2.4.333" Version="0.128">
-  <NugetDependency Id="SmE5CrMa0DtNgDeaJ9GQir" Location="VL.CoreLib" Version="2020.2.4" />
+<Document xmlns:p="property" Id="KfgtS2qmEKhPEw5X0H0zhu" LanguageVersion="2020.3.0.108" Version="0.128">
+  <NugetDependency Id="SmE5CrMa0DtNgDeaJ9GQir" Location="VL.CoreLib" Version="2020.3.0-0108-g92c47c2bfc" />
   <Patch Id="O5br29rp4GoOPV6ilvzPuE">
     <Canvas Id="HQnxbhB8rJbL6HhIIsOmlD" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -117,6 +117,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="TUIOCursor" />
                 </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
                 <Pin Id="IbigWJTxLx0ODbd0bq00KJ" Name="Session ID" Kind="InputPin" />
                 <Pin Id="HFk7SArwyqeORAOWW3eFQN" Name="Position" Kind="InputPin" />
                 <Pin Id="MNMnXTOeH3LMLGTXCOe9AE" Name="Input Minimum" Kind="InputPin" />
@@ -181,6 +182,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="TUIOObject" />
                 </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
                 <Pin Id="Oh2skw3fNv7LMjPBAbus9t" Name="Session ID" Kind="InputPin" />
                 <Pin Id="KTv5tJ8KEAqLmKJS3e9R1P" Name="Class ID" Kind="InputPin" />
                 <Pin Id="S17sR4lM6l3LqOWu9h2eC9" Name="Position" Kind="InputPin" />
@@ -235,6 +237,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="CfItUWYd7thLqMqm9gEXbA" Location="VL.Skia" Version="2020.2.4" />
-  <NugetDependency Id="Or1WHbWdCWZPlmnUCs1G1R" Location="VL.IO.TUIO" Version="0.0.0.0" />
+  <NugetDependency Id="CfItUWYd7thLqMqm9gEXbA" Location="VL.Skia" Version="2020.3.0-0108-g92c47c2bfc" />
+  <NugetDependency Id="EKFQxL791gQMtB5cQQCGVe" Location="VL.IO.TUIO" Version="0.0.0.0" />
 </Document>

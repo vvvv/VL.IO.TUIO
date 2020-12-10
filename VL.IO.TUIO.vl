@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AZ908mWZ2z6L9D48TsQ9JW" Summary="Nodes for the TUIO protocol: http://tuio.org" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2020.2.4.333" Version="0.128">
-  <NugetDependency Id="Se1aLRuKDlcMEPXBHIRYBZ" Location="VL.CoreLib" Version="2020.2.4" />
+<Document xmlns:p="property" Id="AZ908mWZ2z6L9D48TsQ9JW" Summary="Nodes for the TUIO protocol: http://tuio.org" Authors="vvvv group" LicenseUrl="https://www.gnu.org/licenses/lgpl-3.0-standalone.html" ProjectUrl="https://vvvv.org/" LanguageVersion="2020.3.0.108" Version="0.128">
+  <NugetDependency Id="Se1aLRuKDlcMEPXBHIRYBZ" Location="VL.CoreLib" Version="2020.3.0-0108-g92c47c2bfc" />
   <Patch Id="IaechGOEl3dNhj0Bh8NRgp">
     <Canvas Id="Lr3V3AjJ4JQQdp6VsOu4pm" DefaultCategory="IO.TUIO" CanvasType="FullCategory">
       <!--
@@ -3644,6 +3644,8 @@
                 </p:NodeReference>
                 <Pin Id="UT82cRH0LacM5alWoQw9bD" Name="Listening IP" Kind="InputPin" />
                 <Pin Id="E8JlcvOaWVsNfVLrX769OO" Name="Port" Kind="InputPin" />
+                <Pin Id="NjtESmNdPBqPBzJWClBGVY" Name="Enable Data Preview" Kind="InputPin" />
+                <Pin Id="EfiQR46KnZKOshVTXVlLl6" Name="Reset Data Preview" Kind="InputPin" />
                 <Pin Id="FyXQVRbe0fXMK0mqxwv1Sz" Name="Enabled" Kind="InputPin" />
                 <Pin Id="J1JIDkrUUXPPmH2So6MoD1" Name="Data" Kind="OutputPin" />
                 <Pin Id="PRMT1WQduCDPgzuefnIcXL" Name="Data Preview" Kind="OutputPin" />
@@ -4498,5 +4500,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Nny4nC66MTvPWJ72CT7nmK" Location="VL.IO.OSC" Version="2020.2.3-0309-g6a0afab9c3" />
+  <NugetDependency Id="PicOQBV4vt3NENxvJqUy1t" Location="VL.IO.OSC" Version="0.0.0.0" />
 </Document>
