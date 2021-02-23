@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.TUIO</id>
-    <version>1.0.4</version>
-    <title>VL.IO.Firmata</title>
+    <version>1.0.5</version>
+    <title>VL.IO.TUIO</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.IO.TUIO</projectUrl>
@@ -13,7 +13,7 @@
     <tags>VL</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<dependencies>
-		<dependency id="VL.IO.OSC" version="1.0.4" />
+		<dependency id="VL.IO.OSC" version="1.0.6" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
