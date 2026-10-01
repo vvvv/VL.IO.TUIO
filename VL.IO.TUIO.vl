@@ -9575,5 +9575,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PicOQBV4vt3NENxvJqUy1t" Location="VL.IO.OSC" Version="0.0.0.0" />
+  <NugetDependency Id="PicOQBV4vt3NENxvJqUy1t" Location="VL.IO.OSC" Version="2.0.10" />
 </Document>

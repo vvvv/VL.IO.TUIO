@@ -1,8 +1,22 @@
 # VL.IO.TUIO
-Provides support for the TUIO protocol in VL.
 
-Try it with vvvv, the visual live-programming environment for .NET  
-Download: http://visualprogramming.net
+Support for the [TUIO](https://tuio.org/) protocol.  
+- UDP based TUIOClient (receiver) and TUIOTracker (sender)
+- Cursors, Objects and Blobs
+- 2D, 2.5D and 3D profiles
 
-## Using the library
-This library is shipping with vvvv. Demos are available via the Help Browser!
+Useful [extension](https://thegraybook.vvvv.org/reference/hde/extensions.html) for simulating sender and receiver: [VL.TUIO.HDE](https://www.nuget.org/packages/VL.TUIO.HDE).
+
+For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
+
+## Getting started
+- Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
+
+    `nuget install VL.IO.TUIO`
+
+- Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
+
+## Contributing
+- Report issues on [the vvvv forum](https://forum.vvvv.org/c/vvvv-gamma/28)
+- For custom development requests, please [get in touch](mailto:devvvvs@vvvv.org)
+- When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)

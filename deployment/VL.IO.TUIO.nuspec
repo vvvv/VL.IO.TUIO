@@ -2,25 +2,26 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.TUIO</id>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <title>VL.IO.TUIO</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.IO.TUIO</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Provides support for the TUIO protocol in VL</summary>
-    <description>Provides support for the TUIO protocol in VL. Try it with vvvv: http://visualprogramming.net</description>
+    <description>Support for the TUIO protocol in vvvv</description>
     <tags>VL</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<dependencies>
-		<dependency id="VL.IO.OSC" version="1.0.19" />
+		<dependency id="VL.IO.OSC" version="2.0.10" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
+	<readme>docs\README.md</readme>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
 	<file src="..\vvvv\**" target="vvvv\" exclude="" />
 	<file src="nugeticon.png" target="icon\" />
+	<file src="..\README.md" target="docs\" />
   </files>
 </package>
