@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="KfgtS2qmEKhPEw5X0H0zhu" LanguageVersion="2020.3.0.108" Version="0.128">
+  <NugetDependency Id="SmE5CrMa0DtNgDeaJ9GQir" Location="VL.CoreLib" Version="2020.3.0-0108-g92c47c2bfc" />
+  <Patch Id="O5br29rp4GoOPV6ilvzPuE">
+    <Canvas Id="HQnxbhB8rJbL6HhIIsOmlD" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OQcgiNYQ4jPPlBc2Ox4ZWU">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="MkgbS6YHANcOE7KIRvkTQS">
+        <Canvas Id="BMrBMI41qVwLjOMhNZ99OV" CanvasType="Group">
+          <Node Bounds="137,693,145,19" Id="B5GjlAuQgffMLCxf6hIwuA">
+            <p:NodeReference LastCategoryFullName="IO.TUIO" LastSymbolSource="VL.IO.TUIO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TUIOTracker" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="IqEl80XC2EUMSqPZGMWlDz" Name="Tuios" Kind="InputPin" />
+            <Pin Id="J3IMUZtFjl7LRtPhE9edrt" Name="Target Host or IP" Kind="InputPin" />
+            <Pin Id="OF7EhgHdNNhL6uhY77Myk5" Name="Port" Kind="InputPin" />
+            <Pin Id="U6qQGNBHchoOlyjBGOTNlb" Name="Source Message" Kind="InputPin" />
+            <Pin Id="VLyuJRItmF9LMz59oMO5dv" Name="Send Source Message" Kind="InputPin" />
+            <Pin Id="VGD4PVz4A0aLqiOFyN8aYx" Name="Maximum Bundle Size" Kind="InputPin" />
+            <Pin Id="FN7DT4dxeFPPfjDFCOwwUr" Name="Enabled" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="K8UHe66U2C4L21oE9K9eSz" Name="Is Open" Kind="OutputPin" />
+            <Pin Id="GfCbhDbHHBdOiKdudirr65" Name="Bundle Size Exceeded" Kind="OutputPin" />
+          </Node>
+          <Pad Id="M3FLgRHupVzPbZE3AQ5SM3" Comment="Send Source Message" Bounds="503,573,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OHebx9akVNxLRHLBZbOiuQ" Comment="Source Message" Bounds="503,545,48,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TBEVAWPoyU5PpN95MkPuyC" Bounds="662,520,334,162" ShowValueBox="true" isIOBox="true" Value="The optional source message can be transmitted to allow the multiplexing of several TUIO trackers on the client side. The application@address argument is a single string that specifies the application name and any unique source address (IP, host name, MAC address). If sent on localhost, the second address part can be omitted, hence any string without the @ separator implicitly comes from localhost. ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CGBQqSqpG0HOValXVhiMud" Comment="Target Host or IP" Bounds="188,632,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HU5OTqx8FjNOmQR7ryg4Dn" Comment="Port" Bounds="189,661,35,15" ShowValueBox="true" isIOBox="true" Value="3333">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NLoubPmRq1PNvNelDbV2WM" Comment="Bundle Size Exceeded" Bounds="279,750,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GEFg7qkUf0bObOsFZwWSDG" Comment="Is Open" Bounds="139,750,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="96,284,269,134" Id="IWlYBelm2X9PFcUxo6KoAc">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="Ql83lTW8LqKPTAAEaG5coE" Name="Iteration Count" Kind="InputPin" />
+            <Pin Id="V8ZkOe3QbuGLzeJbouH2co" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="SoFwqcm2oMPM4jX00Lnt4a" Bounds="125,413" Alignment="Bottom" />
+            <Patch Id="RowQfXYgW8MO2Kfhh6Tg0U" ManuallySortedPins="true">
+              <Patch Id="HDA67hdvqK2MWRIXInDxfN" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="UJEYUD5VITNMLVzcoLz0F1" Name="Update" ManuallySortedPins="true">
+                <Pin Id="SU6scq0DZxYOrYYAWHmvDN" Name="Index" Kind="InputPin" />
+              </Patch>
+              <Patch Id="NNHI6QjP5yLOQBJQXPhfdh" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="148,307,205,19" Id="QxPqmQdNkgWLpc2OH3mcfx">
+                <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastSymbolSource="VL.Animation.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Wanderer (2D)" />
+                </p:NodeReference>
+                <Pin Id="Kq5tecdFUX3MDQeSKC9rYV" Name="Start" Kind="InputPin" />
+                <Pin Id="LMkHQBNapNWOaM1N2uu7Z6" Name="Center" Kind="InputPin" />
+                <Pin Id="NdL9hJHRQOXPR3mz1yoOEk" Name="Width" Kind="InputPin" />
+                <Pin Id="ElIQHjFG5kwQb11Tr61ddJ" Name="Range Mode" Kind="InputPin" DefaultValue="Mirror">
+                  <p:TypeAnnotation LastCategoryFullName="Math.Ranges" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="RangeMapping" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="SW7SIuUDryUQMU1JsEV0UG" Name="Main Direction" Kind="InputPin" />
+                <Pin Id="IPTd0SWxboWM7O08P4EjGw" Name="Main Direction Tendency" Kind="InputPin" />
+                <Pin Id="GUwoEmLlEOFMOYkbQIOlMB" Name="Direction Deviation" Kind="InputPin" />
+                <Pin Id="TZQaF64WjcfPw0GWm82FjR" Name="Speed" Kind="InputPin" />
+                <Pin Id="MPiIZeJHAakM9ZEIPqHOei" Name="Smoothing" Kind="InputPin" />
+                <Pin Id="MFMxZG7khh0QQENJL6AhO9" Name="Reset" Kind="InputPin" DefaultValue="False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="KGI6UIUg2yUQd0gA0bXpg3" Name="Walk" Kind="InputPin" DefaultValue="True">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="Fbvptk4cAWWNTIY0v2vmeB" Name="Position" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="D02H14ciKfuPEgSDNYsb4a" Bounds="110,346" />
+              <Node Bounds="124,374,69,19" Id="SGe0CQW8fHgLPVI98DoqGX">
+                <p:NodeReference LastCategoryFullName="IO.TUIO" LastSymbolSource="VL.IO.TUIO.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="TUIOCursor" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="IbigWJTxLx0ODbd0bq00KJ" Name="Session ID" Kind="InputPin" />
+                <Pin Id="HFk7SArwyqeORAOWW3eFQN" Name="Position" Kind="InputPin" />
+                <Pin Id="MNMnXTOeH3LMLGTXCOe9AE" Name="Input Minimum" Kind="InputPin" />
+                <Pin Id="AO16oxoFfW5LbwtRE47p7v" Name="Input Maximum" Kind="InputPin" />
+                <Pin Id="GtsgstalU6WQSwKtLGRdcj" Name="Output" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="R3LcHeOmqUTMrHoZcbIQj9" Comment="Cursor Count" Bounds="97,244,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="464,280,269,134" Id="FxdfJvjO5XsLLECwASlGfx">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="Lu6iH9iF4y1NUCVuUe0D1H" Name="Iteration Count" Kind="InputPin" />
+            <Pin Id="TkHMydJjxAxPdjpbaEPUbp" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="AgBVuxsxwF2QC6G7ovXyvc" Bounds="493,409" Alignment="Bottom" />
+            <Patch Id="LVX7BdYdukdM9m64LeBpka" ManuallySortedPins="true">
+              <Patch Id="I0k9sZCmgvaPtw5tYOgGTi" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="Djhz4T24TuULbUarodYvSN" Name="Update" ManuallySortedPins="true">
+                <Pin Id="Pfin6gjDbb6Ocly59XbQfp" Name="Index" Kind="InputPin" />
+              </Patch>
+              <Patch Id="HfP0MBdaiw6PiGazzWgbon" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="516,303,205,19" Id="BCSeqcuR6UwPuN3MWvdnJP">
+                <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastSymbolSource="VL.Animation.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="Wanderer (2D)" />
+                </p:NodeReference>
+                <Pin Id="ICOnwIWoE4MMA9dHXuAio7" Name="Start" Kind="InputPin" />
+                <Pin Id="Q9gJqbgoG5JQOCbXPAqVmP" Name="Center" Kind="InputPin" />
+                <Pin Id="N8Cg5M6bjmELlpH4n7tevP" Name="Width" Kind="InputPin" />
+                <Pin Id="QScthr5Xli7QH4671SbcIp" Name="Range Mode" Kind="InputPin" DefaultValue="Mirror">
+                  <p:TypeAnnotation LastCategoryFullName="Math.Ranges" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="RangeMapping" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="INHmp5zcCsiMwDdkExtsSk" Name="Main Direction" Kind="InputPin" />
+                <Pin Id="TZ4PNT2klZJLttHKviQgmK" Name="Main Direction Tendency" Kind="InputPin" />
+                <Pin Id="Ebgqp7leumVLNJCYfUWARW" Name="Direction Deviation" Kind="InputPin" />
+                <Pin Id="HPOlyr4ghG2OoILNZeMkue" Name="Speed" Kind="InputPin" />
+                <Pin Id="MTYcNr7BrlcQGBoEeiqi2x" Name="Smoothing" Kind="InputPin" />
+                <Pin Id="Tw4qgCMUEy7MNyFOjr9W3u" Name="Reset" Kind="InputPin" DefaultValue="False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="NxP131fRf4yPBtpxxbhX8J" Name="Walk" Kind="InputPin" DefaultValue="True">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="EfZ3PXaQBb4Ogb3quzyjji" Name="Position" Kind="OutputPin" />
+              </Node>
+              <ControlPoint Id="BVEqu9XfPblLMVRciN6sUB" Bounds="478,342" />
+              <Node Bounds="492,370,69,19" Id="VMyjsUvGKaMMyfKOUzfNBE">
+                <p:NodeReference LastCategoryFullName="IO.TUIO" LastSymbolSource="VL.IO.TUIO.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="TUIOObject" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="Oh2skw3fNv7LMjPBAbus9t" Name="Session ID" Kind="InputPin" />
+                <Pin Id="KTv5tJ8KEAqLmKJS3e9R1P" Name="Class ID" Kind="InputPin" />
+                <Pin Id="S17sR4lM6l3LqOWu9h2eC9" Name="Position" Kind="InputPin" />
+                <Pin Id="GFPvtFAi7iQMrWvjG6dT1a" Name="Angle" Kind="InputPin" />
+                <Pin Id="SoLvZFcEkcoM07OsYUOwFC" Name="Input Minimum" Kind="InputPin" />
+                <Pin Id="LEXNlXah0QfPB7XpCAqHMl" Name="Input Maximum" Kind="InputPin" />
+                <Pin Id="Raj1ewwwICpLynqnUsWpnF" Name="Output" Kind="OutputPin" />
+              </Node>
+            </Patch>
+          </Node>
+          <Pad Id="QedDmtjI8hFMNrf3KoAgLJ" Comment="Object Count" Bounds="465,240,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="131,554" Id="RtEka7VdPvcMi8kmOVCq5f">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Concat" />
+              <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="B7VFivBSjU9Ncmz802x9QZ" Name="Input" Kind="InputPin" />
+            <Pin Id="Ea2rhAo8Bo3MKtOZj2pmHu" Name="Input 2" Kind="InputPin" />
+            <Pin Id="ONmsVCij3ekLGrAvaaVTxg" Name="Output" Kind="StateOutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="GC5GbggG05eM9J0uVoHdgl" Name="Create" />
+        <Patch Id="EUEOxyQ3GDmMAUEnvCHfFs" Name="Update" />
+        <ProcessDefinition Id="OQ4rRuMOhewOZsLWLoncLe">
+          <Fragment Id="H1nVzyG4eApL3jFw8lX6f7" Patch="GC5GbggG05eM9J0uVoHdgl" Enabled="true" />
+          <Fragment Id="JVefVkHiV3JNNd7oLDf1Kw" Patch="EUEOxyQ3GDmMAUEnvCHfFs" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="E3cI0oCQIGMNwEgzvt32eH" Ids="M3FLgRHupVzPbZE3AQ5SM3,VLyuJRItmF9LMz59oMO5dv" />
+        <Link Id="IxoLq6z296HPTQWZ1k0dJK" Ids="OHebx9akVNxLRHLBZbOiuQ,U6qQGNBHchoOlyjBGOTNlb" />
+        <Link Id="AMXLy7TshaOMmKRVDxsn5z" Ids="CGBQqSqpG0HOValXVhiMud,J3IMUZtFjl7LRtPhE9edrt" />
+        <Link Id="PBPpajUCoHmQc6sskObxo6" Ids="HU5OTqx8FjNOmQR7ryg4Dn,OF7EhgHdNNhL6uhY77Myk5" />
+        <Link Id="JsVIr15xoziP7K3ShKYNFS" Ids="GfCbhDbHHBdOiKdudirr65,NLoubPmRq1PNvNelDbV2WM" />
+        <Link Id="LgpeLpEmKzdQRq67JsClIE" Ids="K8UHe66U2C4L21oE9K9eSz,GEFg7qkUf0bObOsFZwWSDG" />
+        <Link Id="NxTPdCGQMPaPefwA3Jvy2t" Ids="SU6scq0DZxYOrYYAWHmvDN,D02H14ciKfuPEgSDNYsb4a" IsHidden="true" />
+        <Link Id="TqJWQab7YuzPYM7bGdfTCH" Ids="R3LcHeOmqUTMrHoZcbIQj9,Ql83lTW8LqKPTAAEaG5coE" />
+        <Link Id="VkOOGR4HOF1OrDrCubHIZO" Ids="Fbvptk4cAWWNTIY0v2vmeB,HFk7SArwyqeORAOWW3eFQN" />
+        <Link Id="FWfZ7Gr1l2SQWMVZI2j0UB" Ids="GtsgstalU6WQSwKtLGRdcj,SoFwqcm2oMPM4jX00Lnt4a" />
+        <Link Id="U0BFaaQ1ScdPDfFehpR4y2" Ids="D02H14ciKfuPEgSDNYsb4a,IbigWJTxLx0ODbd0bq00KJ" />
+        <Link Id="BeFZVMKHDz7Mta001An80c" Ids="SoFwqcm2oMPM4jX00Lnt4a,B7VFivBSjU9Ncmz802x9QZ" />
+        <Link Id="Le2Cq4g244JOxJNfo5Kuk4" Ids="Pfin6gjDbb6Ocly59XbQfp,BVEqu9XfPblLMVRciN6sUB" IsHidden="true" />
+        <Link Id="Greyhx6M41vQCLR6mRD9it" Ids="QedDmtjI8hFMNrf3KoAgLJ,Lu6iH9iF4y1NUCVuUe0D1H" />
+        <Link Id="F12kanpUbV5Mg3TKVzf0he" Ids="EfZ3PXaQBb4Ogb3quzyjji,S17sR4lM6l3LqOWu9h2eC9" />
+        <Link Id="KV7G0wzJzvyM62EtyOQbgA" Ids="Raj1ewwwICpLynqnUsWpnF,AgBVuxsxwF2QC6G7ovXyvc" />
+        <Link Id="Sd9VVFFxG62MHHZnFHjoVn" Ids="BVEqu9XfPblLMVRciN6sUB,Oh2skw3fNv7LMjPBAbus9t" />
+        <Link Id="SN6P1zi5YA3OzAoAa4ENS7" Ids="ONmsVCij3ekLGrAvaaVTxg,IqEl80XC2EUMSqPZGMWlDz" />
+        <Link Id="JmWDjHJDlP3PATPvFUDajx" Ids="AgBVuxsxwF2QC6G7ovXyvc,Ea2rhAo8Bo3MKtOZj2pmHu" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="CfItUWYd7thLqMqm9gEXbA" Location="VL.Skia" Version="2020.3.0-0108-g92c47c2bfc" />
+  <NugetDependency Id="EKFQxL791gQMtB5cQQCGVe" Location="VL.IO.TUIO" Version="0.0.0.0" />
+</Document>
