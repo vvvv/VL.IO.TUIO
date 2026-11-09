@@ -707,7 +707,7 @@
             <Pin Id="VQCGDUtbgnWPcNBmK2pXyQ" Name="Enabled" Kind="InputPin" />
             <Pin Id="QgP56FqNvIJLffw4iIBchf" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="CKwtIgOKbDZPqte1bXUnHm" Comment="Listening IP" Bounds="181,231,41,15" ShowValueBox="true" isIOBox="true" Value="0.0.0.0">
+          <Pad Id="CKwtIgOKbDZPqte1bXUnHm" Comment="Listening IP" Bounds="181,231,76,15" ShowValueBox="true" isIOBox="true" Value="0.0.0.0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -892,6 +892,15 @@
             <ControlPoint Id="MOnMEhlY1xeO0Y616GsG9J" Bounds="503,491" Alignment="Top" />
             <ControlPoint Id="Ad1WyjTJA2uMIVdI9knejR" Bounds="503,547" Alignment="Bottom" />
           </Node>
+          <Pad Id="FaVzCSS2PovLUTpwQ7cu9f" Bounds="410,232,192,77" ShowValueBox="true" isIOBox="true" Value="⚠️ For connection type &quot;Websocket&quot; the IP must be a specific IP, 0.0.0.0 (any) is not allowed!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="Me6lzTBvUKMNIsF5WK53sv" Name="Create" />
         <Patch Id="NrrU4F944QZPSYAInKHvLX" Name="Update" />
