@@ -119,10 +119,13 @@
             </Patch>
             <ControlPoint Id="Jgv31lIavsQOaYW2dgi5kq" Bounds="125,441" Alignment="Bottom" />
           </Node>
-          <Pad Id="QMdEYXl1jMSMXJNQBmku3I" Comment="Iteration Count" Bounds="113,291,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="QMdEYXl1jMSMXJNQBmku3I" Comment="Iteration Count" Bounds="113,223,35,29" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+            </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="443,307,289,141" Id="TwTM5WWgJd4LF6va1oJwdJ">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -181,10 +184,13 @@
             </Patch>
             <ControlPoint Id="PdqmuonHyb2N9bMR44Uj2W" Bounds="457,442" Alignment="Bottom" />
           </Node>
-          <Pad Id="Cn9eXyANAExMYV6gb5lgk8" Comment="Iteration Count" Bounds="445,289,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="Cn9eXyANAExMYV6gb5lgk8" Comment="Iteration Count" Bounds="445,221,35,29" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+            </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="205,540,48,19" Id="FEFDvc4cvRRL9pTABhWO5I">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -254,10 +260,13 @@
             </Patch>
             <ControlPoint Id="NZhIfsOuucRMiiVifeMDnP" Bounds="797,442" Alignment="Bottom" />
           </Node>
-          <Pad Id="TyFxgOzg2nUOcaU9x6J6c5" Comment="Iteration Count" Bounds="785,289,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+          <Pad Id="TyFxgOzg2nUOcaU9x6J6c5" Comment="Iteration Count" Bounds="785,221,35,29" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="Me6lzTBvUKMNIsF5WK53sv" Name="Create" />

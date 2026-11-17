@@ -68,12 +68,13 @@
               <Pin Id="SOVVPilSVmFLskm9tlKTAC" Name="Text" Kind="InputPin" />
               <Pin Id="TosTKbfY78HMhLxuEChNBf" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="663,290,71,19" Id="KQ69LVcPlLnM8ntO12eOSG">
+            <Node Bounds="663,290,71,26" Id="KQ69LVcPlLnM8ntO12eOSG">
               <p:NodeReference LastCategoryFullName="IO.TUIO.TUIOPointer" LastDependency="VL.IO.TUIO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="TUIOPointer" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
               </p:NodeReference>
+              <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
               <Pin Id="A86CW2x4E6fOlJ7KcTeujk" Name="Input" Kind="StateInputPin" />
               <Pin Id="RNv5J1XIZCTOJ9diHsbrXk" Name="Session Id" Kind="OutputPin" />
               <Pin Id="BVgINnvEoWgLBm19etw2oW" Name="Position" Kind="OutputPin" />
@@ -267,12 +268,13 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="763,290,105,19" Id="ODpGZssWTAyOVKnUGlJ1tY">
+            <Node Bounds="763,290,105,26" Id="ODpGZssWTAyOVKnUGlJ1tY">
               <p:NodeReference LastCategoryFullName="IO.TUIO.TUIOToken" LastDependency="VL.IO.TUIO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="TUIOToken" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
               </p:NodeReference>
+              <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
               <Pin Id="KPVHye3kwYqNDedoI1Dwnu" Name="Input" Kind="StateInputPin" />
               <Pin Id="TLNUM1AuBJqOH6dopchO8w" Name="Session Id" Kind="OutputPin" />
               <Pin Id="LqNduyzbe0ePzFPJ2r0EXn" Name="Component Id" Kind="OutputPin" />
@@ -567,12 +569,13 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="763,290,105,19" Id="IDnCVuyL7AbPzW2xu5QOg9">
+            <Node Bounds="763,290,105,26" Id="IDnCVuyL7AbPzW2xu5QOg9">
               <p:NodeReference LastCategoryFullName="IO.TUIO.TUIOBounds" LastDependency="VL.IO.TUIO.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="TUIOBounds" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Split" />
               </p:NodeReference>
+              <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
               <Pin Id="OZpFvVqvuDLMrhvyFJu8ds" Name="Input" Kind="StateInputPin" />
               <Pin Id="VjBmP292FU8PHhnfsU7J8p" Name="Session Id" Kind="OutputPin" />
               <Pin Id="VtZxxHAxU8VLmyvHVwLrAT" Name="Position" Kind="OutputPin" />
@@ -775,7 +778,7 @@
               <Choice Kind="TypeFlag" Name="RectangleAnchor" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="CjWee9S5Xn9PG2f04xX9zj" Bounds="333,737,83,20" ShowValueBox="true" isIOBox="true" Value="TUIO Space">
+          <Pad Id="CjWee9S5Xn9PG2f04xX9zj" Bounds="350,740,97,19" ShowValueBox="true" isIOBox="true" Value="&lt; TUIO Space">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -909,9 +912,6 @@
           <Fragment Id="CrGUKcDKgs6PF1ni4rQWsh" Patch="NrrU4F944QZPSYAInKHvLX" Enabled="true" />
         </ProcessDefinition>
         <Link Id="NJqXqja1WFlPMhNCY0JlLx" Ids="CKwtIgOKbDZPqte1bXUnHm,MCkVB2cMEgROsgOSq1pTkK" />
-        <Link Id="F5Di1HFqKoOOe36uWeB0Ry" Ids="J7RM3NIFiJVLZSY5DhAjer,SiDFpTt8dvjPV7hX8xnUoE" />
-        <Link Id="IXwrWTN7r97PqcONPsP96W" Ids="DJ02wTOMGMlMOEBIqMc6qG,KDZS9L43w1LMcBrE5iBwDZ" />
-        <Link Id="Teeec0BYlotPj9r4gHf7Cy" Ids="DTK378XivJ6OulCAbl3DZe,DrKyOGRNTnkO3oDbaLBYtx" />
         <Link Id="OMAhwrhYQW9NMQLOXMExin" Ids="FXTY9kE4wBCPEF20ea94cg,JG11WKg1AqGMDzPsPcJ2X4" />
         <Link Id="Vl1Pw67E1GtNya1ZQAo592" Ids="EC16AUHERyTPPf7p50yafO,N3EJywYIreYPNtXvZGrJK9" />
         <Link Id="QRZtPrcBsUlO92GNhtgbFT" Ids="S6YS0WccakEMKExw3FkU8R,QfMAvhHqLaRLr8u0E5sD5p" />
@@ -932,6 +932,9 @@
         <Link Id="ApOKAC7yJiLMMwyw81Z40w" Ids="SSk5DoPBTLkMg66XBpORed,JyG7Omj6npjLSBRSF2mgyx" />
         <Link Id="C2w6ipN5QK1OG5zfZpjmEc" Ids="VHW4BjSorkdLiX3luqshLi,PNb3YpAg8YgMn2JJsVH66L" />
         <Link Id="TyUCPc8XhvdOIccZXLvDcX" Ids="JNeoqt1c32LPTPOyydbMBw,MOnMEhlY1xeO0Y616GsG9J" />
+        <Link Id="R407VKE3Z5UPuYvAcO7tia" Ids="DTK378XivJ6OulCAbl3DZe,DrKyOGRNTnkO3oDbaLBYtx" />
+        <Link Id="NnbriXXWu4fOEzsIqvv8J5" Ids="DJ02wTOMGMlMOEBIqMc6qG,KDZS9L43w1LMcBrE5iBwDZ" />
+        <Link Id="LI6mH5lW3E7PdyWs1xTiCd" Ids="J7RM3NIFiJVLZSY5DhAjer,SiDFpTt8dvjPV7hX8xnUoE" />
       </Patch>
     </Node>
   </Patch>
